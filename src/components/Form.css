@@ -1,0 +1,25 @@
+.App input {
+    margin: 20px;
+    padding: 10px 20px;
+    border: 2px solid grey;
+    background-color: #fff;
+    transition: .3s;
+}
+
+.formButton {
+    background-color: #623BFF;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5em;
+    font-weight: bold; 
+    padding: 1.5em 2.5em;
+    border-radius: 50px;
+    transition: .3s;
+}
+
+.formButton:hover {
+    background-color: #3930e3;
+    color: #fff;
+    border-radius: 10px;
+}
+

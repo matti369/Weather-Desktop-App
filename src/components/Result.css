@@ -1,0 +1,22 @@
+.result h2 {
+    font-size: 3em;
+}
+
+.result .cityName {
+    font-size: 4em;
+}
+
+.result h3 {
+    font-size: 3em;
+    font-weight: normal;
+    margin-top: 1.5em;
+    padding: .5em;
+}
+
+.wrongCityName {
+    font-size: 5em;
+    font-weight: bold;
+    padding: 1.5em;
+}
+
+
