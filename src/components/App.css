@@ -6,7 +6,7 @@
     font-style: italic;
     margin: 10vh auto;
     max-width: 800px;
-    min-width: 485px;
+    min-width: 300px;
     text-align: center;
     background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
 }
