@@ -18,9 +18,7 @@ class App extends Component {
       wind: "",
       err: false
     }
-
-
-
+    
     handleInputChange = (e) => {
       this.setState({
         value: e.target.value
@@ -60,14 +58,33 @@ class App extends Component {
       })
     }
 
+    handleOnLoad = () => {
+      fetch("https://api.ipgeolocation.io/ipgeo?apiKey=89946874674d4429ab2ef68cc0ed2063&ip=178.235.147.83")
+        .then(response => {
+          if(response.ok) {
+            return response.json()
+          }
+          throw Error("Cos poszło nie tak")
+        })
+        .then(data => {
+          console.log(data);
+      
+          this.setState({
+            city: data.city
+            })
+          })
+      }
+
   render() {
+    // this.handleOnLoad()
     return (
       <div className="App">
         <h1 className="appTitle">Weather Checker</h1>
         <Form
         value={this.state.value}
         change={this.handleInputChange}
-        submit={this.handleCitySubmit}/>
+        submit={this.handleCitySubmit}
+        />
         <Result
         weather= {this.state}/>
       </div>
